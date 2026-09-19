@@ -1,0 +1,14 @@
+version: 1
+
+project_name: anromeda
+
+builds:
+  - binary: andromeda-server
+    main: ./cmd/andromeda-server
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
